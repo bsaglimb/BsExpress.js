@@ -25,3 +25,8 @@
 * Use npm install to install dependencies.
 * Use npm run dev to initiate the server in your terminal.
 * Visit http://localhost:3001/ in your browser. Default provided port is 3001.
+
+## Deployed links
+
+* https://github.com/bsaglimb/BsExpress.js
+* 
