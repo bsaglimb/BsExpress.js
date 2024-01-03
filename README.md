@@ -19,3 +19,9 @@
 * THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
 * WHEN I click on the "New Note" button in the navigation at the top of the page
 * THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
+
+## Installation
+* For installation onto local machine, clone provided repository.
+* Use npm install to install dependencies.
+* Use npm run dev to initiate the server in your terminal.
+* Visit http://localhost:3000/ in your browser. Default provided port is 3000.

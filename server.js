@@ -11,6 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+
+//API Routes
 app.get('/api/notes', (req, res) => {
     res.json(allNotes.slice(1));
 });
@@ -40,27 +42,42 @@ function createNewNote(body, notesArray) {
 
     notesArray.push(newNote);
     fs.writeFileSync(
-        path.join(__dirname, './db/db.json'),
+        path.join(__dirname, './miniature-eureka/Develop/db/db.json'),
         JSON.stringify(notesArray, null, 2)
     );
     return newNote;
 }
-
 
 app.post('/api/notes', (req, res) => {
     const newNote = createNewNote(req.body, allNotes);
     res.json(newNote);
 });
 
+function deleteNote(id, notesArray) {
+    for (let i = 0; i < notesArray.length; i++) {
+        let note = notesArray[i];
+
+        if (note.id == id) {
+            notesArray.splice(i, 1);
+            fs.writeFileSync(
+                path.join(__dirname, './miniature-eureka/Develop/db/db.json'),
+                JSON.stringify(notesArray, null, 2)
+            );
+
+            break;
+        }
+    }
+}
 
 
-
-
+// notes when the button is clicked by removing the note from db.json, saving and showing the updated database on the front end.
 app.delete('/api/notes/:id', (req, res) => {
     deleteNote(req.params.id, allNotes);
     res.json(true);
 });
 
+
+//App listens with front end on this port
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
