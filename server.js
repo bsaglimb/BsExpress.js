@@ -17,18 +17,18 @@ app.get('/api/notes', (req, res) => {
 
 //Home
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+    res.sendFile(path.join(__dirname, './miniature-eureka/Develop/public/index.html'));
 });
 
 //Notes
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/notes.html'));
+    res.sendFile(path.join(__dirname, './miniature-eureka/Develop/public/notes.html'));
 });
 
 
 //Wildcard Route
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+    res.sendFile(path.join(__dirname, '../miniature-eureka/Develop/public/index.html'));
 });
 
 function createNewNote(body, notesArray) {

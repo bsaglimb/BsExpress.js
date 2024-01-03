@@ -24,4 +24,4 @@
 * For installation onto local machine, clone provided repository.
 * Use npm install to install dependencies.
 * Use npm run dev to initiate the server in your terminal.
-* Visit http://localhost:3000/ in your browser. Default provided port is 3000.
+* Visit http://localhost:3001/ in your browser. Default provided port is 3000.
