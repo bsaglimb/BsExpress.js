@@ -45,3 +45,22 @@ function createNewNote(body, notesArray) {
     );
     return newNote;
 }
+
+
+app.post('/api/notes', (req, res) => {
+    const newNote = createNewNote(req.body, allNotes);
+    res.json(newNote);
+});
+
+
+
+
+
+app.delete('/api/notes/:id', (req, res) => {
+    deleteNote(req.params.id, allNotes);
+    res.json(true);
+});
+
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
+});
