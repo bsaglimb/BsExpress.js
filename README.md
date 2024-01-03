@@ -29,4 +29,4 @@
 ## Deployed links
 
 * https://github.com/bsaglimb/BsExpress.js
-* 
+* https://bsaglimb.github.io/BsExpress.js/
