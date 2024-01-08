@@ -1,11 +1,8 @@
 [
-  null,
+  1,
   {
-    "title": "fs",
-    "text": "sfsf",
-    "id": {
-      "title": "Test Title",
-      "text": "Test text"
-    }
+    "title": "delete",
+    "text": "not woorking",
+    "id": null
   }
 ]
