@@ -45,3 +45,4 @@
 ![NoteTaker Homepage](./images/noteTakerHomepage.png)
 ![NoteTaker Page](./images/noteTakerPage.png)
 
+<img src="./Images/noteTakerHomepage.png">
