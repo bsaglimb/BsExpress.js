@@ -42,6 +42,6 @@
 
 # Screenshots
 
-![Demopicture](./images/noteTakerHomepage.png)
-![Demopicture](./images/noteTakerPage.png)
+![NoteTaker Homepage](./images/noteTakerHomepage.png)
+![NoteTaker Page](./images/noteTakerPage.png)
 
