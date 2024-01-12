@@ -39,3 +39,9 @@
 
 # Heroku link
 * https://bs-express-js-771d2db1c440.herokuapp.com/
+
+# Screenshots
+
+![Demopicture](./images/noteTakerHomepage.png)
+![Demopicture](./images/noteTakerPage.png)
+
